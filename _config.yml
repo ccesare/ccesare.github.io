@@ -6,6 +6,9 @@ github_username: ccesare
 markdown: kramdown
 
 collections:
-  - clips
+  clips:
+    output: false
 
 permalink: /blog/:year/:month/:day/:title
+
+maxclips: 5
