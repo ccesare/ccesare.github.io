@@ -12,3 +12,7 @@ collections:
 permalink: /blog/:year/:month/:day/:title
 
 maxclips: 5
+url: localhost
+
+sass:
+  sass_dir: _sass

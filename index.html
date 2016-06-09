@@ -1,31 +1,54 @@
+---
+---
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>{{ site.name }}</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
 
 <body>
 
-<div class="wrapper">
-<header>
+  <div class="wrapper">
+    <header>
 
-<nav>
+      <div class="site-logo"><img src="images/main_logo.jpg" height=100px></div>
 
-</nav>
+      <div class="site-title">{{ site.name }}</div>
 
-</header>
+      <span class="site-nav">
+          <ul id="nav-list">
+            <li class="nav-item nav-item-home">Home</li>
+            <li class="nav-item nav-item-blog">Blog</li>
+            <li class="nav-item nav-item-clips">Clips</li>
+            <li class="nav-item nav-item-about">About</li>
+            <li class="nav-item nav-item-contact">Contact</li>
+          </ul>
+      </span>
 
-<main>
+    </header>
+
+    <main>
+      <div class="welcome-blurb">Some text about stuff and things.</div>
+
+      <div class="clip-box">
+        <div class="clip-item" "clip-1">A first clip.</div>
+        <div class="clip-item" "clip-2">A second clip.</div>
+        <div class="clip-item" "clip-3">A third clip.</div>
+        <div class="clip-item" "clip-4">A fourth clip.</div>
+      </div>
+
+      <div class="blog-box">
+        Probably some Liquid in here to show the most recent posts.
+      </div>
+    </main>
 
 
+    <footer>
 
-</main>
-
-
-<footer>
-
-
-</footer>
+    </footer>
 
 
 </body>
