@@ -5,6 +5,7 @@
 
 <head>
   <title>{{ site.name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
@@ -14,24 +15,33 @@
   <div class="wrapper">
     <header>
 
-      <div class="site-logo"><img src="images/main_logo.jpg" height=100px></div>
+      <div class="site-logo"></div>
 
-      <div class="site-title">{{ site.name }}</div>
+      <div class="site-title">
+        <p class="title-name">Chris Cesare</p>
+        <p class="title-occupation">Science Writer</p>
+      </div>
 
-      <span class="site-nav">
-          <ul id="nav-list">
-            <li class="nav-item nav-item-home">Home</li>
-            <li class="nav-item nav-item-blog">Blog</li>
-            <li class="nav-item nav-item-clips">Clips</li>
-            <li class="nav-item nav-item-about">About</li>
-            <li class="nav-item nav-item-contact">Contact</li>
-          </ul>
+      <span id="site-nav">
+          <input type="checkbox" id="nav-checkbox-toggle">
+          <label for="nav-checkbox-toggle">...</label>
+        <ul id="nav-list">
+          <li class="nav-item nav-item-home">home</li>
+          <li class="nav-item nav-item-blog">blog</li>
+          <li class="nav-item nav-item-clips">clips</li>
+          <li class="nav-item nav-item-about">about</li>
+          <li class="nav-item nav-item-contact">contact</li>
+        </ul>
       </span>
 
     </header>
 
     <main>
-      <div class="welcome-blurb">Some text about stuff and things.</div>
+      <div class="welcome-blurb">
+        <p class="home-text">Greetings! I'm a recent graduate of the UC Santa Cruz Science Communication program and a past reporting intern at Nature. I'm currently Senior Science Communicator at the Joint Quantum Institute.</p>
+        <p class="home-text">I graduated from the University of New Mexico in 2014 with a Ph.D. in physics. I was a member of the Center for Quantum Information and Control.</p>
+        <p class="home-text">I'm a home brewer, and I also like to program.</p>
+      </div>
 
       <div class="clip-box">
         <div class="clip-item" "clip-1">A first clip.</div>
@@ -50,6 +60,23 @@
 
     </footer>
 
+<script>
+  var specifiedElement = document.getElementById('site-nav');
+  //console.log('specifiedElement is ' + specifiedElement);
+  document.addEventListener('click', function(event) {
+    var isClickInside = specifiedElement.contains(event.target);
+    if (isClickInside) {
+      //console.log('You clicked inside');
+    } else {
+      //console.log('You clicked outside');
+      var checkbox = document.getElementById('nav-checkbox-toggle');
+      console.log('checkbox is ' + checkbox.checked)
+      if (checkbox.checked) {
+        checkbox.checked = false;
+      }
+    }
+    });
+</script>
 
 </body>
 </div>
