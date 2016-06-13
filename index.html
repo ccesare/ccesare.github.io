@@ -13,7 +13,24 @@
 <body>
 
   <div class="wrapper">
+
     <header>
+
+      <nav id="site-nav">
+        <input type="checkbox" id="nav-checkbox-toggle">
+        <label for="nav-checkbox-toggle">...</label>
+        <ul id="nav-list">
+          <li class="nav-item nav-item-home"><a href="#">Home</a></li>
+          <hr class="nav-separator">
+          <li class="nav-item nav-item-blog"><a href="#">Blog</a></li>
+          <hr class="nav-separator">
+          <li class="nav-item nav-item-clips"><a href="#">Clips</a></li>
+          <hr class="nav-separator">
+          <li class="nav-item nav-item-about"><a href="#">About</a></li>
+          <hr class="nav-separator">
+          <li class="nav-item nav-item-contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
       <div class="site-logo"></div>
 
@@ -21,18 +38,6 @@
         <p class="title-name">Chris Cesare</p>
         <p class="title-occupation">Science Writer</p>
       </div>
-
-      <span id="site-nav">
-          <input type="checkbox" id="nav-checkbox-toggle">
-          <label for="nav-checkbox-toggle">...</label>
-        <ul id="nav-list">
-          <li class="nav-item nav-item-home">home</li>
-          <li class="nav-item nav-item-blog">blog</li>
-          <li class="nav-item nav-item-clips">clips</li>
-          <li class="nav-item nav-item-about">about</li>
-          <li class="nav-item nav-item-contact">contact</li>
-        </ul>
-      </span>
 
     </header>
 
@@ -70,7 +75,7 @@
     } else {
       //console.log('You clicked outside');
       var checkbox = document.getElementById('nav-checkbox-toggle');
-      console.log('checkbox is ' + checkbox.checked)
+      //console.log('checkbox is ' + checkbox.checked);
       if (checkbox.checked) {
         checkbox.checked = false;
       }
