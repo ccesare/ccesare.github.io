@@ -14,32 +14,7 @@
 
   <div class="wrapper">
 
-    <header>
-
-      <nav id="site-nav">
-        <input type="checkbox" id="nav-checkbox-toggle">
-        <label for="nav-checkbox-toggle">...</label>
-        <ul id="nav-list">
-          <li class="nav-item nav-item-home"><a href="#">Home</a></li>
-          <hr class="nav-separator">
-          <li class="nav-item nav-item-blog"><a href="#">Blog</a></li>
-          <hr class="nav-separator">
-          <li class="nav-item nav-item-clips"><a href="#">Clips</a></li>
-          <hr class="nav-separator">
-          <li class="nav-item nav-item-about"><a href="#">About</a></li>
-          <hr class="nav-separator">
-          <li class="nav-item nav-item-contact"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="site-logo"></div>
-
-      <div class="site-title">
-        <p class="title-name">Chris Cesare</p>
-        <p class="title-occupation">Science Writer</p>
-      </div>
-
-    </header>
+    {% include header.html %}
 
     <main>
       <div class="welcome-blurb">
@@ -61,9 +36,7 @@
     </main>
 
 
-    <footer>
-
-    </footer>
+    {% include footer.html %}
 
 <script>
   var specifiedElement = document.getElementById('site-nav');
