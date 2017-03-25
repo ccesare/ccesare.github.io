@@ -3,7 +3,9 @@
 
 // Sass variables
 $site-purple: #6600ff
-$break-small: 800px
+$link-hover: #004776
+$link-color: #762f00
+$break-small: 940px
 
 // Basic site-wide settings
 *
@@ -23,15 +25,15 @@ body
     max-width: 900px
 
 a:link
-  color: #6600ff
+  color: $link-color
   text-decoration: none
 
 a:visited
-  color: #6600ff
+  color: $link-color
   text-decoration: none
 
 a:hover
-  color: #000066
+  color: $link-hover
   text-decoration: underline
 
 // Wrapper for all content
@@ -43,6 +45,9 @@ a:hover
 header
   font-size: 1.5em
   position: relative
+  border-bottom: 2px dotted
+  @media only screen and (min-width: $break-small)
+    padding-bottom: 120px
 
 .site-title
   display: block
@@ -52,24 +57,25 @@ header
   top: -10px
   @media only screen and (min-width: $break-small)
     position: absolute
-    top: 50px
-    left: 110px
+    top: 30px
+    left: 100px
     margin: unset
     width: auto
 
 .site-title p
   text-align: center
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace
-  letter-spacing: -2px
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-weight: 200
+  //letter-spacing: -2px
   @media only screen and (min-width: $break-small)
-    display: inline
+    display: block
     padding-left: 10px
 
 .site-title p.title-name
-  font-size: 2.4em
+  font-size: 2em
 
 .site-title p.title-occupation
-  font-size: 1.9em
+  font-size: 1.5em
 
 .site-logo
   display: block
@@ -82,7 +88,7 @@ header
   top: -30px
   @media only screen and (min-width: $break-small)
     position: absolute
-    top: 0
+    top: 10px
     left: 0
     width: 100px
     height: 100px
@@ -102,7 +108,7 @@ header
   @media only screen and (min-width: $break-small)
     display: block
     position: absolute
-    top: 0
+    top: 100px
     left: unset
     right: 0
 
@@ -130,8 +136,11 @@ header
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace
   text-align: center
   @media only screen and (min-width: $break-small)
-    display: inline
+    display: inline-block
     padding-left: 10px
+    padding-top: 0
+    padding-bottom: 0
+    font-size: 18px
     
 
 // Nav separators
@@ -139,19 +148,99 @@ hr.nav-separator
   border: 0
   border-bottom: 1px dashed #ccc
   background: #999
+  margin: 0 auto
+  width: 100px
   @media only screen and (min-width: $break-small)
     display: none
 
 // Styling for main tag
 main
-  font-size: 1.6em
+  font-size: 14pt
   margin-top: 10px
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  padding-bottom: 10px
   @media only screen and (min-width: $break-small)
-    margin-top: 110px
+    margin-top: 10px
+    font-size: 16pt
 
 .home-text
   padding-top: 10px
 
+.feature-item
+  margin-top: 30px
+  width: 100%
+  text-align: center
+  @media only screen and (min-width: $break-small)
+    display: inline-block
+    width: 45%
+    text-align: center
+    
 .clip-item
-  margin-top: 20px
+  margin-top: 30px
+  width: 100%
+  text-align: center
+  display: block
+  @media only screen and (min-width: $break-small)
+    display: table
+    width: unset
+    text-align: left
+
+.clip-img
+  padding-top: 10px
+  width: 500px
+  left: -100px
+  position: relative
+    
+.feature-img
+  padding-top: 10px
+  width: 500px
+  left: -100px
+  position: relative
+  
+.clip-link
+  @media only screen and (min-width: $break-small)
+    display: table-cell
+    vertical-align: middle
+  
+.feature-crop
+  height: 300px
+  width: 300px
+  overflow: hidden
+  margin: 0 auto
+  
+.clip-crop
+  height: 300px
+  width: 300px
+  overflow: hidden
+  margin: 0 auto
+  display: block
+  //border: 2px solid
+  @media only screen and (min-width: $break-small)
+    margin-right: 10px
+    float: left
+  
+.feature-box
+  margin-top: 30px
+  width: 100%
+  @media only screen and (min-width: $break-small)
+    font-size: 14pt
+    
+.clip-box
+  margin-top: 30px
+  width: 100%
+  display: table
+  position: relative
+    
+.blog-box
+  margin-top: 30px
+  font-size: 14pt
+  
+.clear
+  clear: both
+
+// Footer styles
+footer
+  font-size: 1.5em
+  position: relative
+  border-top: 2px dotted
+  padding-top: 10px

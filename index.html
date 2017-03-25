@@ -18,19 +18,30 @@
 
     <main>
       <div class="welcome-blurb">
-        <p class="home-text">Greetings! I'm a recent graduate of the UC Santa Cruz Science Communication program and a past reporting intern at Nature. I'm currently Senior Science Communicator at the Joint Quantum Institute.</p>
-        <p class="home-text">I graduated from the University of New Mexico in 2014 with a Ph.D. in physics. I was a member of the Center for Quantum Information and Control.</p>
-        <p class="home-text">I'm a home brewer, and I also like to program.</p>
+		<h2>Greetings!</h2>
+        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I've written for Nature, Science and the San Jose Mercury News, among other outlets. I attended the UC Santa Cruz Science Communication program and earned a Ph.D. in physics from the University of New Mexico. I'm currently Senior Science Communicator at the Joint Quantum Institute.</p>
+        <p class="home-text">I like to program, and in a previous life I was a home brewer.</p>
       </div>
-
-      <div class="clip-box">
-        <div class="clip-item" "clip-1">A first clip.</div>
-        <div class="clip-item" "clip-2">A second clip.</div>
-        <div class="clip-item" "clip-3">A third clip.</div>
-        <div class="clip-item" "clip-4">A fourth clip.</div>
+      <div class="feature-box">
+		<h2>Featured clips</h2>
+		
+		{% assign sorted = site.clips | sort:"date" | reverse %}
+		{% for clip in sorted %}
+			{% if clip.featured == true %}
+				<div class="feature-item">
+					<a href="{{ clip.address }}">{{ clip.headline }}</a>
+					<br>
+					<div class="feature-crop">
+						<img class="feature-img" src="{{ clip.image_url }}" width=300px>
+					</div>
+				</div>
+			{% endif %}
+		{% endfor %}
+		
       </div>
 
       <div class="blog-box">
+		<h2>Recent blog posts</h2>
         Probably some Liquid in here to show the most recent posts.
       </div>
     </main>

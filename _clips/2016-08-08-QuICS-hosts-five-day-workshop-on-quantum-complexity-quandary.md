@@ -1,0 +1,10 @@
+---
+type: news_article
+headline: QuICS hosts five-day workshop on quantum complexity quandary
+outlet: Joint Quantum Institute
+date_published: 2016-08-08
+image_url: http://quics.umd.edu/sites/quics.umd.edu/files//styles/medium/public/quics%20workshop%202016-%20Quics%20site.jpeg?itok=VAAXCYju
+image_credit: C. Cesare/JQI
+address: http://quics.umd.edu/news/quics-hosts-five-day-workshop-quantum-complexity-quandary
+featured: no
+---
