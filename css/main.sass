@@ -3,6 +3,7 @@
 
 // Sass variables
 $site-purple: #6600ff
+$break-small: 800px
 
 // Basic site-wide settings
 *
@@ -17,6 +18,8 @@ body
   width: 95%
   margin: 0 auto
   min-width: 300px
+  @media only screen and (min-width: $break-small)
+    width: 80%
 
 a:link
   color: #6600ff
@@ -46,11 +49,20 @@ header
   margin: 0 auto
   position: relative
   top: -10px
+  @media only screen and (min-width: $break-small)
+    position: absolute
+    top: 50px
+    left: 110px
+    margin: unset
+    width: auto
 
 .site-title p
   text-align: center
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace
   letter-spacing: -2px
+  @media only screen and (min-width: $break-small)
+    display: inline
+    padding-left: 10px
 
 .site-title p.title-name
   font-size: 2.4em
@@ -67,6 +79,12 @@ header
   margin: 0 auto
   position: relative
   top: -30px
+  @media only screen and (min-width: $break-small)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100px
+    height: 100px
 
 // Navigation
 #site-nav
@@ -80,6 +98,12 @@ header
   //border-top: dotted 0.3em
   //border-bottom: dotted 0.3em
   border-color: $site-purple
+  @media only screen and (min-width: $break-small)
+    display: block
+    position: absolute
+    top: 0
+    left: unset
+    right: 0
 
 #site-nav label
   font-size: 4.0em
@@ -87,6 +111,8 @@ header
   color: $site-purple
   position: relative
   top: -40px
+  @media only screen and (min-width: $break-small)
+    display: none
 
 #site-nav input[type=checkbox]
   display: none
@@ -102,18 +128,26 @@ header
   padding-bottom: 10px
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace
   text-align: center
+  @media only screen and (min-width: $break-small)
+    display: inline
+    padding-left: 10px
+    
 
 // Nav separators
-hr.style-three
+hr.nav-separator
   border: 0
   border-bottom: 1px dashed #ccc
   background: #999
+  @media only screen and (min-width: $break-small)
+    display: none
 
 // Styling for main tag
 main
   font-size: 1.6em
   margin-top: 10px
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+  @media only screen and (min-width: $break-small)
+    margin-top: 110px
 
 .home-text
   padding-top: 10px
