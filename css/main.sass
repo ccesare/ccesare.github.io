@@ -187,15 +187,21 @@ main
 
 .clip-img
   padding-top: 10px
-  width: 500px
+  width: 400px
   left: -100px
   position: relative
+  @media only screen and (min-width: $break-small)
+    width: 500px
     
 .feature-img
   padding-top: 10px
-  width: 500px
+  width: 400px
   left: -100px
   position: relative
+  @media only screen and (min-width: $break-small)
+    width: 600px
+    left: -150px
+    top: -20px
   
 .clip-link
   @media only screen and (min-width: $break-small)
@@ -203,14 +209,19 @@ main
     vertical-align: middle
   
 .feature-crop
-  height: 300px
-  width: 300px
+  height: 200px
+  width: 200px
   overflow: hidden
   margin: 0 auto
+  @media only screen and (min-width: $break-small)
+    height: 300px
+    width: 300px
+    border: 2px solid
+    margin-top: 10px
   
 .clip-crop
-  height: 300px
-  width: 300px
+  height: 200px
+  width: 200px
   overflow: hidden
   margin: 0 auto
   display: block
@@ -218,12 +229,15 @@ main
   @media only screen and (min-width: $break-small)
     margin-right: 10px
     float: left
+    height: 300px
+    width: 300px
   
 .feature-box
   margin-top: 30px
   width: 100%
   @media only screen and (min-width: $break-small)
     font-size: 14pt
+
     
 .clip-box
   margin-top: 30px

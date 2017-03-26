@@ -1,0 +1,58 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ site.name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    {% include header.html %}
+    
+    <main>
+		<p class="home-text">Feel free to contact me by email. Anything sent to @chriscesare.com will reach me. You can find me on Twitter and LinkedIn, too.</p>
+		
+		<p class="home-text">
+		<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.89bd237a86eeb0e8b1de842a4b88b09b.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=chriscesare&amp;show_count=false&amp;show_screen_name=true&amp;size=l&amp;time=1490531144143" style="position: static; visibility: visible; width: 162px; height: 28px;" data-screen-name="chriscesare"></iframe>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		
+		<a href="http://www.linkedin.com/in/chriscesare">
+			<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Chris Cesare's profile on LinkedIn">
+		</a>
+		</p>
+		
+		
+	</main>
+	
+	
+	{% include footer.html %}
+
+<script>
+  var specifiedElement = document.getElementById('site-nav');
+  //console.log('specifiedElement is ' + specifiedElement);
+  document.addEventListener('click', function(event) {
+    var isClickInside = specifiedElement.contains(event.target);
+    if (isClickInside) {
+      //console.log('You clicked inside');
+    } else {
+      //console.log('You clicked outside');
+      var checkbox = document.getElementById('nav-checkbox-toggle');
+      //console.log('checkbox is ' + checkbox.checked);
+      if (checkbox.checked) {
+        checkbox.checked = false;
+      }
+    }
+    });
+</script>
+
+</body>
+</div>
+
+</html>

@@ -19,7 +19,8 @@
     <main>
       <div class="welcome-blurb">
 		<h2>Greetings!</h2>
-        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I've written for Nature, Science and the San Jose Mercury News, among other outlets. I attended the UC Santa Cruz Science Communication program and earned a Ph.D. in physics from the University of New Mexico. I'm currently Senior Science Communicator at the Joint Quantum Institute.</p>
+        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I'm devoted to telling stories about quantum physics</p>
+        <p class="home-text">I've written for Nature, Science and the San Jose Mercury News, among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended the UC Santa Cruz Science Communication. Currently I'm Senior Science Communicator at the Joint Quantum Institute.</p>
         <p class="home-text">I like to program, and in a previous life I was a home brewer.</p>
       </div>
       <div class="feature-box">
@@ -31,8 +32,10 @@
 				<div class="feature-item">
 					<a href="{{ clip.address }}">{{ clip.headline }}</a>
 					<br>
+					{{ clip.date | date: "%B %-d, %Y" }} for {{ clip.outlet }}
+					<br>
 					<div class="feature-crop">
-						<img class="feature-img" src="{{ clip.image_url }}" width=300px>
+						<img class="feature-img" src="{{ clip.image_url }}">
 					</div>
 				</div>
 			{% endif %}
