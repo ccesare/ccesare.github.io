@@ -6,7 +6,7 @@
 <head>
   <title>{{ site.name }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 </head>
 
@@ -18,10 +18,10 @@
 
     <main>
       <div class="welcome-blurb">
-		<h2>Greetings!</h2>
-        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I'm devoted to telling stories about quantum physics</p>
-        <p class="home-text">I've written for Nature, Science and the San Jose Mercury News, among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended the UC Santa Cruz Science Communication. Currently I'm Senior Science Communicator at the Joint Quantum Institute.</p>
-        <p class="home-text">I like to program, and in a previous life I was a home brewer.</p>
+		<h2>Welcome to my internet home.</h2>
+        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about quantum physics research for the Joint Quantum Institute, where I am currently Senior Science Communicator.</p>
+        <p class="home-text">My writing and reporting has appeared in Nature, Science and the San Jose Mercury News, among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the UC Santa Cruz Science Communication Program.</p>
+        <p class="home-text">I like programming, Netflix and podcasts. I once spent a week learning what it would take to start my own brewery. Now I just drink beer.</p>
       </div>
       <div class="feature-box">
 		<h2>Featured clips</h2>
@@ -45,7 +45,18 @@
 
       <div class="blog-box">
 		<h2>Recent blog posts</h2>
-        Probably some Liquid in here to show the most recent posts.
+        <div class="recent-blogs">
+        <ul>
+        {% for post in site.posts limit:1  %}
+			{% if forloop.last %}
+				<li>
+					<a class="post-link" href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+        
+        </ul>
+        </div>
       </div>
     </main>
 
