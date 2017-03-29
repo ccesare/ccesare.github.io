@@ -1,87 +1,44 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
+<div class="welcome-blurb">
+<h2>Welcome to my internet home.</h2>
+  <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about quantum physics research for the Joint Quantum Institute, where I am currently Senior Science Communicator.</p>
+  <p class="home-text">My writing and reporting has appeared in Nature, Science and the San Jose Mercury News, among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the UC Santa Cruz Science Communication Program.</p>
+  <p class="home-text">I like programming, Netflix and podcasts. I once spent a week learning what it would take to start my own brewery. Now I just drink beer.</p>
+</div>
+<div class="feature-box">
+<h2>Featured clips</h2>
 
-<head>
-  <title>{{ site.name }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-</head>
+{% assign sorted = site.clips | sort:"date" | reverse %}
+{% for clip in sorted %}
+	{% if clip.featured == true %}
+		<div class="feature-item">
+			<a href="{{ clip.address }}">{{ clip.headline }}</a>
+			<br>
+			{{ clip.date | date: "%B %-d, %Y" }} for {{ clip.outlet }}
+			<br>
+			<div class="feature-crop">
+				<img class="feature-img" src="{{ clip.image_url }}">
+			</div>
+		</div>
+	{% endif %}
+{% endfor %}
 
-<body>
-
-  <div class="wrapper">
-
-    {% include header.html %}
-
-    <main>
-      <div class="welcome-blurb">
-		<h2>Welcome to my internet home.</h2>
-        <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about quantum physics research for the Joint Quantum Institute, where I am currently Senior Science Communicator.</p>
-        <p class="home-text">My writing and reporting has appeared in Nature, Science and the San Jose Mercury News, among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the UC Santa Cruz Science Communication Program.</p>
-        <p class="home-text">I like programming, Netflix and podcasts. I once spent a week learning what it would take to start my own brewery. Now I just drink beer.</p>
-      </div>
-      <div class="feature-box">
-		<h2>Featured clips</h2>
-		
-		{% assign sorted = site.clips | sort:"date" | reverse %}
-		{% for clip in sorted %}
-			{% if clip.featured == true %}
-				<div class="feature-item">
-					<a href="{{ clip.address }}">{{ clip.headline }}</a>
-					<br>
-					{{ clip.date | date: "%B %-d, %Y" }} for {{ clip.outlet }}
-					<br>
-					<div class="feature-crop">
-						<img class="feature-img" src="{{ clip.image_url }}">
-					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-		
-      </div>
-
-      <div class="blog-box">
-		<h2>Recent blog posts</h2>
-        <div class="recent-blogs">
-        <ul>
-        {% for post in site.posts limit:1  %}
-			{% if forloop.last %}
-				<li>
-					<a class="post-link" href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
-				</li>
-			{% endif %}
-		{% endfor %}
-        
-        </ul>
-        </div>
-      </div>
-    </main>
-
-
-    {% include footer.html %}
-
-<script>
-  var specifiedElement = document.getElementById('site-nav');
-  //console.log('specifiedElement is ' + specifiedElement);
-  document.addEventListener('click', function(event) {
-    var isClickInside = specifiedElement.contains(event.target);
-    if (isClickInside) {
-      //console.log('You clicked inside');
-    } else {
-      //console.log('You clicked outside');
-      var checkbox = document.getElementById('nav-checkbox-toggle');
-      //console.log('checkbox is ' + checkbox.checked);
-      if (checkbox.checked) {
-        checkbox.checked = false;
-      }
-    }
-    });
-</script>
-
-</body>
 </div>
 
-</html>
+<div class="blog-box">
+<h2>Recent blog posts</h2>
+  <div class="recent-blogs">
+  <ul>
+  {% for post in site.posts limit:1  %}
+	{% if forloop.last %}
+		<li>
+			<a class="post-link" href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
+		</li>
+  {% endif %}
+  {% endfor %}
+
+  </ul>
+  </div>
+</div>
