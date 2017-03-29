@@ -1,0 +1,17 @@
+<script>
+  var specifiedElement = document.getElementById('site-nav');
+  //console.log('specifiedElement is ' + specifiedElement);
+  document.addEventListener('click', function(event) {
+    var isClickInside = specifiedElement.contains(event.target);
+    if (isClickInside) {
+      //console.log('You clicked inside');
+    } else {
+      //console.log('You clicked outside');
+      var checkbox = document.getElementById('nav-checkbox-toggle');
+      //console.log('checkbox is ' + checkbox.checked);
+      if (checkbox.checked) {
+        checkbox.checked = false;
+      }
+    }
+    });
+</script>
