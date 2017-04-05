@@ -1,18 +1,13 @@
 ---
 layout: default
-title: The blog
 ---
 
-# {{ page.title }}
+## Blog posts
 
-<ul class="posts">
+<ul class="blog-list">
 
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
-
-  {% for clip in site.clips %}
-    <li><span>{{ clip.date | date_to_string }}</span> The title was this: {{ clip.title}}</li>
+    <li>{{ post.date | date_to_string }} --- <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
   {% endfor %}
 
 </ul>

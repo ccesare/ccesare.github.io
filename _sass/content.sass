@@ -15,6 +15,8 @@ main
 
 main p
   padding-top: 10px
+  padding-bottom: 10px
+  line-height: 1.5em
 
 .home-text
   padding-top: 10px
@@ -79,18 +81,46 @@ main p
 
 // Blog display on main page
 .blog-box
-  margin-top: 30px
+  margin-top: 20px
   font-size: 14pt
 
 .recent-blogs
-  margin-top: 30px
   width: 100%
   display: table
   position: relative
 
 .recent-blogs li
   list-style-type: none
-  font-size: 18pt
+  font-size: 20pt
+  margin: 20px
+
+// Styling for the actual blog page
+.blog-list
+  margin-top: 20px
+  margin-bottom: 20px
+  list-style-type: none
+
+.blog-list li
+  margin: 20px
+  font-size: 20pt
+
+.blog-sub-head-left
+  float: left
+
+.blog-sub-head-right
+  float: right
+
+.blog-title
+  text-align: center
+  border-bottom: 1px solid
+  padding: 30px
+  padding-bottom: 45px
+
+code
+  background-color: $code-background
+  border: 1px solid
+  border-radius: 2px
+  padding: 2px
 
 // Larger screens
 @media only screen and (min-width: $break-small)
@@ -103,7 +133,7 @@ main p
     font-size: 14pt
     margin: 0 auto
     position: relative
-    padding-top: 20px
+    padding-top: 10px
 
   .feature-item
     display: inline-block
@@ -129,7 +159,7 @@ main p
     vertical-align: top
     position: relative
     top: -4px
-    font-size: 14pt
+    font-size: 12pt
 
   .clip-link-size
     font-size: 20pt

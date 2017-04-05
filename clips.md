@@ -25,7 +25,7 @@ I also produced a [five minute video](https://vimeo.com/131390904) chronicling t
 		<div class="clip-link">
 		<a href="{{ clip.address }}" class="clip-link-size">{{ clip.headline | group_by: "outlet" }}</a>
 		<br>
-		{{ clip.date | date: "%Y %b %-d" }}
+		Published: {{ clip.date | date: "%Y %b %-d" }}
 		{% if clip.image_credit %}
 		<br>
 		Image credit: {{ clip.image_credit }}
