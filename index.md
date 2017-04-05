@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<div class="welcome-blurb">
-  <p class="home-text">I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the Joint Quantum Institute, where I am currently Senior Science Communicator.</p>
-</div>
+I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the Joint Quantum Institute, where I am currently Senior Science Communicator.
+
 <div class="feature-box">
+
 <h2>Featured writing</h2>
 
 {% assign sorted = site.clips | sort:"date" | reverse %}
 {% for clip in sorted %}
 	{% if clip.featured == true %}
-		<div class="feature-item">
-      {{ clip.date | date: "%Y %B %-d" }}
+		<div class="feature-item" markdown="0">
+      {{ clip.date | date: "%Y %b %-d" }}
 			<br>
       <a href="{{ clip.address }}">{{ clip.headline }}</a>
       <br>
@@ -27,14 +27,11 @@ layout: default
 <h2>Recent blog posts</h2>
   <div class="recent-blogs">
   <ul>
-  {% for post in site.posts %}
-	{% if forloop.last %}
+  {% for post in site.posts limit: 5%}
 		<li>
 			<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
 		</li>
-  {% endif %}
   {% endfor %}
-
   </ul>
   </div>
 </div>
