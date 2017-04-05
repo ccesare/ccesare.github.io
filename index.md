@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the [Joint Quantum Institute](http://jqi.umd.edu), where I am currently Senior Science Communicator. Below is a selection of some of my published writing, followed by recent blog posts.
+I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the [Joint Quantum Institute](http://jqi.umd.edu), where I am currently Senior Science Communicator.
 
 <div class="feature-box">
 
@@ -31,7 +31,7 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
   <ul>
   {% for post in site.posts limit: 5%}
 		<li>
-			{{ post.date | date_to_string }} -- <a href="{{ post.url }}">{{ post.title }}</a>
+			{{ post.date | date_to_string }} <a href="{{ post.url }}" class="blog-link-separator">{{ post.title }}</a>
 		</li>
   {% endfor %}
   </ul>
