@@ -10,7 +10,7 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
 {% assign sorted = site.clips | sort:"date" | reverse %}
 {% for clip in sorted %}
 	{% if clip.featured == true %}
-		<div class="feature-item" markdown="0">
+		<div class="feature-item">
       {{ clip.date | date: "%Y %b %-d" }}
 			<br>
       <a href="{{ clip.address }}">{{ clip.headline }}</a>
@@ -24,8 +24,10 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
 </div>
 
 <div class="blog-box">
+
 <h2>Recent blog posts</h2>
-  <div class="recent-blogs">
+
+	<div class="recent-blogs">
   <ul>
   {% for post in site.posts limit: 5%}
 		<li>
