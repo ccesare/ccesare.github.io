@@ -21,7 +21,9 @@ permalink: /clips/
 		</div>
 		{% endif %}
 		<div class="clip-link">
-		<a href="{{ clip.address }}">{{ clip.headline | group_by: "outlet" }}</a>, {{ clip.date | date: "%B %-d, %Y" }}
+		<a href="{{ clip.address }}">{{ clip.headline | group_by: "outlet" }}</a>
+		<br>
+		{{ clip.date | date: "%Y %B %-d" }}
 		</div>
 		{% if clip.image_url %}
 		<div class="clear"></div>
