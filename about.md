@@ -6,10 +6,8 @@ permalink: /about/
 
 My writing and reporting has appeared in [Nature](https://www.nature.com/news), [Science](https://www.sciencemag.org/news) and the [San Jose Mercury News](https://www.mercurynews.com/), among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the [UC Santa Cruz Science Communication Program](https://scicom.ucsc.edu).
 
-I like programming, Netflix and podcasts. I once spent a week learning what it would take to start my own brewery. Now I just drink beer.
+I like programming, Netflix and podcasts. I once spent a week researching how to start my own brewery. Now I just drink beer.
 
-I made my dad teach me how to play a computer game when I was five. Eventually, the insides of that mysterious gray box grabbed my attention, and playing turned to tinkering. I had to know how it worked.
+Physics taught me about the building blocks of digital computers. When I came across quantum mechanics---the ironclad laws of the very small---I was smitten. In graduate school I studied how to harness these quantum rules to make new kinds of computers. But as my focus narrowed, my curiosity expanded, and my devotion to a scientific career became uncertain.
 
-Physics taught me about basic digital building blocks and how thermodynamics demands that computers function as space heaters. When I came across quantum mechanics---the ironclad laws of the very small---I was smitten. In graduate school I studied how to harness these quantum rules to make new kinds of computers. But as my focus narrowed, my curiosity expanded, and my devotion to a scientific career became uncertain.
-
-Now I will satisfy that curiosity by telling science stories. No longer focused solely on quantum physics, I will probe what we know and how we know it.
+Now I satisfy that curiosity by telling science stories. No longer focused solely on quantum physics, I will probe what we know and how we know it.
