@@ -1,0 +1,120 @@
+// Content styles
+
+// Smaller screens
+
+// Wrapper for all content
+.wrapper
+  font-size: 1.0em
+  padding: 20px
+
+main
+  font-size: 14pt
+  margin-top: 10px
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  padding-bottom: 10px
+
+.home-text
+  padding-top: 10px
+
+// Featured clips on front page
+.feature-box
+  margin-top: 30px
+  width: 100%
+
+.feature-item
+  margin-top: 20px
+  width: 100%
+  text-align: center
+
+.feature-crop
+  height: 200px
+  width: 200px
+  overflow: hidden
+  margin: 0 auto
+  border: 2px solid
+
+.feature-img
+  padding-top: 10px
+  width: 400px
+  left: -100px
+  position: relative
+  top: -20px
+
+// Clips list on clips page
+.clip-box
+  margin-top: 30px
+  width: 100%
+  display: table
+  position: relative
+
+.clip-item
+  margin-top: 30px
+  width: 100%
+  text-align: center
+  display: block
+
+.clip-crop
+  height: 200px
+  width: 200px
+  overflow: hidden
+  margin: 0 auto
+  display: block
+  border: 2px solid
+
+.clip-img
+  padding-top: 10px
+  width: 400px
+  left: -100px
+  position: relative
+  top: -20px
+
+.blog-box
+  margin-top: 30px
+  font-size: 14pt
+
+.recent-blogs
+  margin-top: 30px
+  width: 100%
+  display: table
+  position: relative
+
+.recent-blogs li
+  list-style-type: none
+
+// Larger screens
+@media only screen and (min-width: $break-small)
+  main
+    margin-top: 10px
+    font-size: 16pt
+
+  // Featured images on main page
+  .feature-box
+    font-size: 14pt
+    margin: 0 auto
+    position: relative
+    padding-top: 20px
+
+  .feature-item
+    display: inline-block
+    width: 30%
+
+  .feature-crop
+    height: 200px
+    width: 200px
+    margin-top: 10px
+
+  // Clips on clip page
+  .clip-crop
+    margin-right: 10px
+    float: left
+
+  .clip-item
+    display: table
+    width: unset
+    text-align: left
+
+  .clip-link
+    display: table-cell
+    vertical-align: top
+    position: relative
+    top: -4px

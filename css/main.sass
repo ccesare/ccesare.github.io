@@ -7,6 +7,8 @@ $link-hover: #004776
 $link-color: #762f00
 $break-small: 940px
 
+@import 'header', 'nav', 'content', 'footer'
+
 // Basic site-wide settings
 *
   padding: 0
@@ -14,6 +16,9 @@ $break-small: 940px
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+
+.clear
+  clear: both
 
 .noselect
   -webkit-touch-callout: none
@@ -23,17 +28,7 @@ $break-small: 940px
   -ms-user-select: none
   user-select: none
 
-body
-  font-size: 62.5%
-  width: 95%
-  margin: 0 auto
-  min-width: 300px
-
-@media only screen and (min-width: $break-small)
-  body
-    width: 80%
-    max-width: 1000px
-
+// Link styles
 a:link
   color: $link-color
   text-decoration: none
@@ -46,238 +41,11 @@ a:hover
   color: $link-hover
   text-decoration: underline
 
-// Wrapper for all content
-.wrapper
-  font-size: 1.0em
-  padding: 20px
-
-// Header classes
-header
-  font-size: 1.5em
-  position: relative
-  border-bottom: 2px dotted
-  @media only screen and (min-width: $break-small)
-    padding-bottom: 120px
-
-.site-title
-  display: block
-  width: 100%
+body
+  font-size: 62.5%
+  width: 95%
   margin: 0 auto
-  position: relative
-  top: -10px
+  min-width: 300px
   @media only screen and (min-width: $break-small)
-    position: absolute
-    top: 30px
-    left: 100px
-    margin: unset
-    width: auto
-
-.site-title p
-  text-align: left
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-  font-weight: 200
-  //letter-spacing: -2px
-  @media only screen and (min-width: $break-small)
-    display: block
-    padding-left: 10px
-
-.site-title p.title-name
-  font-size: 28pt
-  font-weight: 500
-
-.site-title p.title-occupation
-  font-size: 20pt
-  font-weight: 300
-
-.site-logo
-  display: block
-  width: 175px
-  height: 175px
-  background: url(../images/main_logo.jpg) no-repeat bottom left
-  background-size: contain
-  margin: 0 auto
-  position: relative
-  top: -30px
-  @media only screen and (min-width: $break-small)
-    position: absolute
-    top: 10px
-    left: 0
-    width: 100px
-    height: 100px
-
-// Navigation
-#site-nav
-  width: 100%
-
-#site-nav ul
-  display: none
-  left: 3px
-  position: relative
-  top: -40px
-  //border-top: dotted 0.3em
-  //border-bottom: dotted 0.3em
-  border-color: $site-purple
-  @media only screen and (min-width: $break-small)
-    display: block
-    position: absolute
-    top: 100px
-    left: unset
-    right: 0
-
-#site-nav label
-  font-size: 4.0em
-  font-weight: bolder
-  color: $site-purple
-  position: relative
-  top: -40px
-  @media only screen and (min-width: $break-small)
-    display: none
-
-#site-nav input[type=checkbox]
-  display: none
-
-#site-nav input[type=checkbox]:checked ~ ul
-  display: block
-
-.nav-item
-  list-style-type: none
-  display: block
-  font-size: 1.6em
-  padding-top: 5px
-  padding-bottom: 10px
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace
-  text-align: center
-  @media only screen and (min-width: $break-small)
-    display: inline-block
-    padding-left: 10px
-    padding-top: 0
-    padding-bottom: 0
-    font-size: 18px
-
-
-// Nav separators
-hr.nav-separator
-  border: 0
-  border-bottom: 1px dashed #ccc
-  background: #999
-  margin: 0 auto
-  width: 100px
-  @media only screen and (min-width: $break-small)
-    display: none
-
-// Styling for main tag
-main
-  font-size: 14pt
-  margin-top: 10px
-  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-  padding-bottom: 10px
-  @media only screen and (min-width: $break-small)
-    margin-top: 10px
-    font-size: 16pt
-
-.home-text
-  padding-top: 10px
-
-.feature-item
-  margin-top: 20px
-  width: 100%
-  text-align: center
-  @media only screen and (min-width: $break-small)
-    display: inline-block
-    width: 30%
-
-.clip-item
-  margin-top: 30px
-  width: 100%
-  text-align: center
-  display: block
-  @media only screen and (min-width: $break-small)
-    display: table
-    width: unset
-    text-align: left
-
-.clip-img
-  padding-top: 10px
-  width: 400px
-  left: -100px
-  position: relative
-  top: -20px
-  @media only screen and (min-width: $break-small)
-    width: 400px
-    left: -100px
-
-.feature-img
-  padding-top: 10px
-  width: 400px
-  left: -100px
-  position: relative
-  @media only screen and (min-width: $break-small)
-    width: 400px
-    left: -100px
-    top: -20px
-
-.clip-link
-  @media only screen and (min-width: $break-small)
-    display: table-cell
-    vertical-align: top
-    position: relative
-    top: -4px
-
-.feature-crop
-  height: 200px
-  width: 200px
-  overflow: hidden
-  margin: 0 auto
-  @media only screen and (min-width: $break-small)
-    height: 200px
-    width: 200px
-    border: 2px solid
-    margin-top: 10px
-
-.clip-crop
-  height: 200px
-  width: 200px
-  overflow: hidden
-  margin: 0 auto
-  display: block
-  border: 2px solid
-  @media only screen and (min-width: $break-small)
-    margin-right: 10px
-    float: left
-    height: 200px
-    width: 200px
-
-.feature-box
-  margin-top: 30px
-  width: 100%
-  @media only screen and (min-width: $break-small)
-    font-size: 14pt
-    margin: 0 auto
-    position: relative
-    padding-top: 20px
-
-.clip-box
-  margin-top: 30px
-  width: 100%
-  display: table
-  position: relative
-
-.blog-box
-  margin-top: 30px
-  font-size: 14pt
-
-.clear
-  clear: both
-
-.recent-blogs
-  margin-top: 30px
-  width: 100%
-  display: table
-  position: relative
-
-// Footer styles
-footer
-  font-size: 1.5em
-  position: relative
-  border-top: 2px dotted
-  padding-top: 10px
+    width: 80%
+    max-width: 1000px
