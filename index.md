@@ -31,7 +31,7 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
   <ul>
   {% for post in site.posts limit: 5%}
 		<li>
-			{{ post.date | date_to_string }} <a href="{{ post.url }}" class="blog-link-separator">{{ post.title }}</a>
+			{{ post.date | date_to_string }} . <a href="{{ post.url }}" class="blog-link-separator">{{ post.title }}</a>
 		</li>
   {% endfor %}
   </ul>

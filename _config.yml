@@ -5,6 +5,10 @@ github_username: ccesare
 linkedin_username: chriscesare
 
 markdown: kramdown
+highligher: pygments
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 collections:
   clips:
