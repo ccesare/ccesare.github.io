@@ -11,9 +11,9 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
 {% for clip in sorted %}
 	{% if clip.featured == true %}
 		<div class="feature-item">
-      {{ clip.date | date: "%Y %b %-d" }}
-			<br>
       <a href="{{ clip.address }}">{{ clip.headline }}</a>
+			<br>
+      {{ clip.date | date: "%Y %b %-d" }}
       <br>
 			<div class="feature-crop">
 				<img class="feature-img" src="{{ clip.image_url }}">
