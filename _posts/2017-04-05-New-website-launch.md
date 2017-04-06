@@ -19,7 +19,7 @@ The gist of Jekyll: It reads in a bunch of text files from predefined and user-d
 
 For me, Jekyll's real power is its native fluency in YAML, a markup language that looks like a pretty version of XML. Jekyll parses YAML into data structures that you can iterate over and do logic on. It was a perfect way for me to store my clips.
 
-```yaml
+``` yaml
 ---
 type: news_article
 headline: Ions sync up into world's first time crystal
