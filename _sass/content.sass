@@ -1,0 +1,167 @@
+// Content styles
+
+// Smaller screens
+
+// Wrapper for all content
+.wrapper
+  font-size: 1.0em
+  padding: 20px
+
+main
+  font-size: 14pt
+  margin-top: 10px
+  font-family: "Roboto Slab", "Times New Roman", serif
+  padding-bottom: 10px
+
+main p
+  padding-top: 10px
+  padding-bottom: 10px
+  line-height: 1.5em
+
+.home-text
+  padding-top: 10px
+
+// Featured clips on front page
+.feature-box
+  margin-top: 30px
+  width: 100%
+
+.feature-item
+  margin-top: 20px
+  text-align: center
+
+.feature-crop
+  height: 200px
+  width: 200px
+  overflow: hidden
+  margin: 0 auto
+  border: 2px solid
+  margin-top: 5px
+
+.feature-img
+  padding-top: 10px
+  width: 400px
+  left: -100px
+  position: relative
+  top: -20px
+
+// Clips list on clips page
+.clip-box
+  width: 100%
+  display: table
+  position: relative
+
+.clip-item
+  margin-top: 30px
+  width: 100%
+  text-align: center
+  display: block
+
+.clip-crop
+  height: 200px
+  width: 200px
+  overflow: hidden
+  margin: 0 auto
+  display: block
+  border: 2px solid
+
+.clip-img
+  padding-top: 10px
+  width: 400px
+  left: -100px
+  position: relative
+  top: -20px
+
+.clip-link
+  font-size: 14pt
+  margin-top: 10px
+
+.clip-link-size
+  font-size: 16pt
+
+// Blog display on main page
+.blog-box
+  margin-top: 20px
+  font-size: 14pt
+
+.recent-blogs
+  width: 100%
+  display: table
+  position: relative
+
+.recent-blogs li
+  list-style-type: none
+  margin: 20px
+
+// Styling for the actual blog page
+.blog-list
+  margin-top: 20px
+  margin-bottom: 20px
+  list-style-type: none
+
+.blog-list li
+  margin: 20px
+  font-size: 20pt
+
+.blog-sub-head-left
+  float: left
+
+.blog-sub-head-right
+  float: right
+
+.blog-title
+  text-align: center
+  padding: 20px
+  padding-bottom: 5px
+
+.blog-post
+  border-top: 1px solid
+
+//code
+  //background-color: $code-background
+  //border: 1px solid
+  //border-radius: 2px
+  //padding: 2px
+
+// Larger screens
+@media only screen and (min-width: $break-small)
+  main
+    margin-top: 10px
+    font-size: 16pt
+
+  // Featured images on main page
+  .feature-box
+    font-size: 14pt
+    margin: 0 auto
+    position: relative
+    padding-top: 10px
+    text-align: center
+
+  .feature-box h2
+    text-align: left
+
+  .feature-item
+    display: inline-block
+    width: 30%
+
+  .feature-crop
+    height: 200px
+    width: 200px
+    margin-top: 10px
+
+  // Clips on clip page
+  .clip-crop
+    margin-right: 10px
+    float: left
+
+  .clip-item
+    display: table
+    width: unset
+    text-align: left
+
+  .clip-link
+    display: table-cell
+    vertical-align: top
+    position: relative
+    top: -4px
+    font-size: 12pt

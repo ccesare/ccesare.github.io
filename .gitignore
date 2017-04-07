@@ -6,3 +6,4 @@ README.md
 Gemfile*
 lighttpd.conf
 .DS_Store
+.sass-cache/

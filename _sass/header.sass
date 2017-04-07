@@ -1,0 +1,61 @@
+// Header sytles
+
+// Smaller screens
+header
+  font-size: 1.5em
+  position: relative
+  border-bottom: 5px solid
+  border-radius: 5px
+
+.site-title
+  display: block
+  width: 100%
+  margin: 0 auto
+  position: relative
+  top: -10px
+
+.site-title p
+  font-family: "Roboto Slab", "Times New Roman", serif
+
+.site-title p.title-name
+  font-size: 26pt
+  font-weight: 500
+
+.site-title p.title-occupation
+  font-size: 20pt
+  font-weight: 300
+  font-family: "Courier"
+
+
+.site-logo
+  display: block
+  width: 175px
+  height: 175px
+  background: url(../images/main_logo.jpg) no-repeat bottom left
+  background-size: contain
+  margin: 0 auto
+  position: relative
+  top: -30px
+
+// Larger screens
+@media only screen and (min-width: $break-small)
+  header
+    padding-bottom: 120px
+
+  .site-title
+    position: absolute
+    top: 30px
+    left: 100px
+    margin: unset
+    width: auto
+
+  .site-title p
+    display: block
+    padding-left: 10px
+
+  .site-logo
+    position: absolute
+    top: 10px
+    left: 0
+    width: 100px
+    height: 100px
