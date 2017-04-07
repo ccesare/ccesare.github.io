@@ -4,7 +4,7 @@
  */
 
 .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 10px; border-radius: 3px; }
-.highlight pre, pre { white-space: pre-wrap; @media only screen and (max-width: $break-small) {font-size: 12pt; }}
+.highlight pre, pre { white-space: pre-wrap; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
