@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A new website and a new blog"
-date: 2017-04-05
+date: 2017-04-07
 author: Chris Cesare
 author_email: me@chriscesare.com
 ---
