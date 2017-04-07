@@ -7,7 +7,7 @@ author_email: me@chriscesare.com
 ---
 Welcome to my Jekyll-ified website. It's a project that's been in the works for more than a year, marked by two major bursts of activity.
 
-There are several reasons for the change. I update my portfolio of published clips obsessively, often right after a story goes live. This became a major hassle while I was a reporter for Nature and churned out news regularly. I had an endless `clips.html` file that I edited manually, and the whole thing became a tangled mess of `div` and `href` tags. There was a lot of hunting and indenting and copying and pasting. And I made lots of mistakes.
+There are several reasons for the change. I update my portfolio of published clips obsessively, often right after a story goes live. This became a major hassle while I was a reporter for Nature and churned out news on the reg. I had an endless `clips.html` file that I edited manually, and the whole thing became a tangled mess of `div` and `href` tags. It took a lot of hunting and indenting and copying and pasting. And I made lots of mistakes.
 
 It was also a totally inconvenient way to keep a record of my publications. The data was shoehorned into a static web page, which killed its portability. And I didn't have that many clips, so a CMS like Wordpress seemed cumbersome.
 
