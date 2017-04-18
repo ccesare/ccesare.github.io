@@ -8,12 +8,22 @@ I reported a feature-length magazine story for Science Notes 2015 titled ["Heard
 
 I also produced a [five minute video](https://vimeo.com/131390904) chronicling the Aptos High School robotics team's quest to retain their crown at an annual competition.
 
+Jump to an outlet:
+
+{% assign outlets = site.clips | group_by: "outlet" | reverse %}
+{% for outlet in outlets %}
+<span class="outlet-list">
+<a href="#{{ outlet.name }}">{{ outlet.name }}</a>
+</span>
+{% unless forloop.last %}{% raw %} | {% endraw %}{% endunless %}{% endfor %}
+
 <div class="clip-box">
 {% assign outlets = site.clips | group_by: "outlet" %}
 {% assign rev_outlets = outlets | reverse %}
 {% for outlet in rev_outlets %}
 <br>
-<h3>{{ outlet.name }}</h3>
+<h3><a name="{{ outlet.name }}"></a>{{ outlet.name }}</h3>
+{{ outlet.items | size }} clips
 {% assign sorted_clips = outlet.items | sort: "date" | reverse %}
 {% for clip in sorted_clips %}
 	<div class="clip-item">
@@ -23,7 +33,7 @@ I also produced a [five minute video](https://vimeo.com/131390904) chronicling t
 		</div>
 		{% endif %}
 		<div class="clip-link">
-		<a href="{{ clip.address }}" class="clip-link-size">{{ clip.headline | group_by: "outlet" }}</a>
+		<a href="{{ clip.address }}" class="clip-link-size" target="_blank">{{ clip.headline | group_by: "outlet" }}</a>
 		<br>
 		Published: {{ clip.date | date: "%Y %b %-d" }}
 		{% if clip.image_credit %}

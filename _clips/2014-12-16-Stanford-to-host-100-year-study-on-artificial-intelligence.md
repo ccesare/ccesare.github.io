@@ -1,7 +1,10 @@
 ---
 type: news_article
-headline: Stanford engineering professor Richard Luthy receives distinguished environmental engineering award
+headline: Stanford to host 100-year study on artificial intelligence
 outlet: Stanford University School of Engineering
-address: http://engineering.stanford.edu/news/stanford-engineering-professor-richard-luthy-receives-distinguished-environmental-engineering-a
+date_published: 2014-12-16
+image_url: http://news.stanford.edu/news/2014/december/images/14649-aialtman_news.jpg
+image_credit: Rod Searcey
+address: http://news.stanford.edu/news/2014/december/ai-century-study-121614.html
 featured: no
 ---

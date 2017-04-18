@@ -1,7 +1,10 @@
 ---
 type: news_article
-headline: Two Stanford engineering professors elected fellows of the American Society of Mechanical Engineers
+headline: Stanford engineers invent high-tech mirror to beam heat away from buildings into space
 outlet: Stanford University School of Engineering
-address: http://engineering.stanford.edu/news/two-stanford-engineering-professors-elected-fellows-american-society-mechanical-engineers
+date_published: 2014-11-26
+image_url: http://news.stanford.edu/news/2014/november/images/14571-cooling_illustration.jpg
+image_credit: Fan Lab
+address: http://news.stanford.edu/news/2014/november/radiative-cooling-mirror-112614.html
 featured: no
 ---

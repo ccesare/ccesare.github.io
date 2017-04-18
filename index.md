@@ -5,7 +5,7 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
 
 <div class="feature-box">
 
-<h2>Some of my favorites</h2>
+<h2>Some favorite clips</h2>
 
 {% assign sorted = site.clips | sort:"date" | reverse %}
 {% for clip in sorted %}
