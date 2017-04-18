@@ -4,7 +4,7 @@ headline: Stanford chemical engineers borrow technique from petrochemical indust
 outlet: Stanford University School of Engineering
 date_published: 2014-11-05
 address: http://news.stanford.edu/news/2014/november/catalyst-energy-storage-110514.html
-image_url: http://news.stanford.edu/news/2014/november/images/14499-catalyst_news.jpg
+image_url: /images/clips/14499-catalyst_news.jpg
 image_credit: Jakob Kibsgaard
 featured: no
 ---

@@ -1,5 +1,5 @@
 ---
-type: news_article
+type: feature
 headline: Underwater robots&#58; Aptos High club seeks to regain world championship
 outlet: Freelance Contributions
 date_published: 2015-03-05

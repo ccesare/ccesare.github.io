@@ -35,6 +35,10 @@ Jump to an outlet:
 		<div class="clip-link">
 		<a href="{{ clip.address }}" class="clip-link-size" target="_blank">{{ clip.headline | group_by: "outlet" }}</a>
 		<br>
+		{% if clip.type != "news_article" %}
+		{{ clip.type | capitalize }}
+		<br>
+		{% endif %}
 		Published: {{ clip.date | date: "%Y %b %-d" }}
 		{% if clip.image_credit %}
 		<br>
