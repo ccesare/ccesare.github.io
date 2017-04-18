@@ -4,6 +4,7 @@ title: "A new website and a new blog"
 date: 2017-04-12
 author: Chris Cesare
 author_email: me@chriscesare.com
+image: /images/blog/typewriter.jpg
 ---
 Welcome to my Jekyll-ified website. It's a project that's been in the works for more than a year, marked by two major bursts of activity.
 
