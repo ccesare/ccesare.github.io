@@ -7,8 +7,10 @@ layout: default
 <div class="clear"></div>
 
 <div class="blog-post">
+{% if page.image %}
 <div class="blog-image">
 <img src="{{ page.image }}" class="blog-image">
 </div>
+{% endif %}
 {{ content | markdownify }}
 </div>
