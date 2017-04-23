@@ -23,27 +23,12 @@ main p
 
 // Featured clips on front page
 .feature-box
-  margin-top: 30px
+  margin-top: 5px
   width: 100%
 
-.feature-item
-  margin-top: 20px
-  text-align: center
-
-.feature-crop
-  height: 200px
-  width: 200px
-  overflow: hidden
-  margin: 0 auto
-  border: 2px solid
-  margin-top: 5px
-
-.feature-img
-  padding-top: 10px
-  width: 400px
-  left: -100px
-  position: relative
-  top: -20px
+.feature-box li
+  list-style-type: none
+  margin: 20px
 
 // Clips list on clips page
 .clip-box
@@ -57,20 +42,10 @@ main p
   text-align: center
   display: block
 
-.clip-crop
-  height: 200px
-  width: 200px
-  overflow: hidden
-  margin: 0 auto
-  display: block
-  border: 2px solid
-
 .clip-img
-  padding-top: 10px
-  width: 400px
-  left: -100px
+  width: 200px
   position: relative
-  top: -20px
+  border: 2px solid
 
 .clip-link
   font-size: 10pt
@@ -127,12 +102,6 @@ main p
 .blog-image img
   width: 275px
 
-//code
-  //background-color: $code-background
-  //border: 1px solid
-  //border-radius: 2px
-  //padding: 2px
-
 // Larger screens
 @media only screen and (min-width: $break-small)
   main
@@ -142,22 +111,11 @@ main p
   // Featured images on main page
   .feature-box
     font-size: 14pt
-    margin: 0 auto
     position: relative
-    padding-top: 10px
-    text-align: center
+    text-align: left
 
   .feature-box h2
     text-align: left
-
-  .feature-item
-    display: inline-block
-    width: 30%
-
-  .feature-crop
-    height: 200px
-    width: 200px
-    margin-top: 10px
 
   // Clips on clip page
   .clip-crop
