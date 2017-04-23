@@ -3,11 +3,17 @@
 <head>
 	<title>{{ site.name }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/css/jekyll-github.css" />
 	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	{% include analytics.html %}
+	<style>
+	body { visibility: hidden; }
+	</style>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+  	var body = document.getElementsByTagName("body")[0];
+		body.style.visibility = "visible";
+	});
+	</script>
 </head>
 <body>
 	<div class="wrapper">
@@ -24,6 +30,8 @@
 	{% include scripts.html %}
 
 	</div>
-
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jekyll-github.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </body>
 </html>
