@@ -13,6 +13,8 @@ kramdown:
 collections:
   clips:
     output: false
+  outlets:
+    output: true
   posts:
     permalink: /blog/:categories/:year/:month/:day/:title.html
 

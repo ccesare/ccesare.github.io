@@ -10,17 +10,17 @@ I'm a science writer living and working in the Washington, D.C. metropolitan are
 {% for clip in sorted %}
 {% if clip.featured == true %}
 	<li>
-		{% for outlet in site.data.outlets %}
+		{% for outlet in site.outlets %}
 		{% if clip.outlet == outlet.name %}
 		<img style="position:relative;top:6px;" src="{{ outlet.icon }}" width="30px" title="{{ outlet.name }}">
 		&bull;
 		{% endif %}
 		{% endfor %}
   	{{ clip.date | date_to_string }} &bull;
-		<a href="{{ clip.address }}" target="_blank">{{ clip.headline }}</a>
 		{% if clip.type != "news_article" %}
 		[{{ clip.type | upcase }}]
 		{% endif %}
+		<a href="{{ clip.address }}" target="_blank">{{ clip.headline }}</a>
 	</li>
 {% endif %}
 {% endfor %}
