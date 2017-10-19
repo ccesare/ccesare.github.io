@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the [Joint Quantum Institute](http://jqi.umd.edu), where I am currently Senior Science Communicator.
+I'm a science writer living and working in the Washington, D.C. metropolitan area. I tell stories about physics research for the [Joint Quantum Institute](http://jqi.umd.edu) and the [UMD Physics Department](http://umdphysics.umd.edu), where I am currently Senior Science Communicator.
 
 <div class="feature-box">
 <h2>Featured recent clips</h2>
