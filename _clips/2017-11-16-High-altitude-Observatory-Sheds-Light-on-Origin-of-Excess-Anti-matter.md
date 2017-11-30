@@ -1,5 +1,5 @@
 ---
-type: article
+type: news_article
 headline: High-altitude Observatory Sheds Light on Origin of Excess Anti-matter
 outlet: Joint Quantum Institute
 date_published: 2017-11-16
