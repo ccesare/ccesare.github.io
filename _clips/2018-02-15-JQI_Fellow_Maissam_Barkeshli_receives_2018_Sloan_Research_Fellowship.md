@@ -1,5 +1,5 @@
 ---
-type: news_story
+type: news_article
 headline: JQI Fellow Maissam Barkeshli receives 2018 Sloan Research Fellowship
 outlet: Joint Quantum Institute
 date_published: 2018-02-15
