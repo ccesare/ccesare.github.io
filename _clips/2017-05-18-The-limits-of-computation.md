@@ -7,5 +7,5 @@ image_url: http://jqi.umd.edu/sites/default/files/styles/article_lead/public/ima
 image_credit: Yuri Samoilov/CC BY 2.0
 address: http://jqi.umd.edu/news/podcast/limits-computation
 embed_code:
-featured: yes
+featured: no
 ---
