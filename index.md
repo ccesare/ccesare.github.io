@@ -4,7 +4,7 @@ layout: default
 I'm a science writer living and working in the Washington, D.C. metropolitan area. I write research stories for the [Department of Physics at the University of Maryland](https://umdphysics.umd.edu) and the [Joint Quantum Institute](http://jqi.umd.edu), where I am currently Senior Science Communicator.
 
 <div class="feature-box">
-<h2>Featured recent clips</h2>
+<h2>Latest featured clips</h2>
 <ul>
 {% assign sorted = site.clips | sort:"date" | reverse %}
 {% for clip in sorted %}
