@@ -8,7 +8,7 @@ I reported a feature-length magazine story for Science Notes 2015 titled ["Heard
 
 I also produced a [five minute video](https://vimeo.com/131390904) chronicling the Aptos High School robotics team's quest to retain their crown at an annual competition.
 
-Clips organized by outlet:
+My clips:
 
 <ul>
 {% for outlet in site.outlets %}
