@@ -2,13 +2,11 @@
 layout: default
 ---
 <div class="clip-box">
-<h3><a name="All Clips"></a>All Clips</h3>
+{% assign clips = site.clips | reverse %}
 <br>
-{% assign clips = site.clips %}
-{% assign rev_clips = clips | reverse %}
-{% assign sorted_clips = rev_clips.items | sort: "date" | reverse %}
-{{ clips.items | size }} clips
-{% for clip in sorted_clips %}
+<h3><a name="{{ outlet.name }}"></a>{{ outlet.name }}</h3>
+{{ clips | size }} clips
+{% for clip in clips %}
 	<div class="clip-item">
 		{% if clip.image_url %}
 		<div class="clip-crop">
@@ -27,6 +25,8 @@ layout: default
 		<br>
 		Image credit: {{ clip.image_credit }}
 		{% endif %}
+		<br>
+		Outlet: {{ clip.outlet }}
 		</div>
 		{% if clip.image_url %}
 		<div class="clear"></div>
