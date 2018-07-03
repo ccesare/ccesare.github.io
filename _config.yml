@@ -7,6 +7,8 @@ linkedin_username: chriscesare
 sass:
   sass_dir: _sass
 
+exclude: ['node_modules']
+
 markdown: kramdown
 highligher: rouge
 kramdown:

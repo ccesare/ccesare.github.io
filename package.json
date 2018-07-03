@@ -1,0 +1,25 @@
+{
+  "name": "ccesare.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccesare/ccesare.github.io.git"
+  },
+  "author": "Chris Cesare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccesare/ccesare.github.io/issues"
+  },
+  "homepage": "https://github.com/ccesare/ccesare.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-addons-update": "^15.6.2",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.14.0"
+  }
+}
