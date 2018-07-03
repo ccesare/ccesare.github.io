@@ -7,7 +7,7 @@ linkedin_username: chriscesare
 sass:
   sass_dir: _sass
 
-exclude: ['node_modules']
+exclude: ['node_modules', '.eslintrc.json', 'package-lock.json', 'package.json', 'README.md', 'webpack.config.js', 'webpack', 'CNAME']
 
 markdown: kramdown
 highligher: rouge
