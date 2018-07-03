@@ -5,7 +5,7 @@ github_username: ccesare
 linkedin_username: chriscesare
 
 source: src
-destination: public
+destination: _site
 
 markdown: kramdown
 highligher: rouge
