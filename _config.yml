@@ -7,6 +7,8 @@ linkedin_username: chriscesare
 source: src
 destination: _site
 
+sass_dir: src/_sass
+
 markdown: kramdown
 highligher: rouge
 kramdown:
@@ -24,5 +26,3 @@ collections:
 maxclips: 5
 url: localhost
 
-sass:
-  sass_dir: src/_sass
