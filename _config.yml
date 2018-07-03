@@ -4,6 +4,9 @@ twitter_username: chriscesare
 github_username: ccesare
 linkedin_username: chriscesare
 
+source: src
+destination: public
+
 markdown: kramdown
 highligher: rouge
 kramdown:
