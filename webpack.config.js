@@ -16,7 +16,11 @@ module.exports = {
                 query: {
                     presets: ["react", "es2015"]
                 }
+            },
+            {
+                test: /\.md$/,
+                use: ["json-loader", "yaml-frontmatter-loader"]
             }
         ]
     }
-};
+}
