@@ -1,5 +1,5 @@
 ---
-type: (Adapted from a press release distributed by the IceCube Collaboration)
+type: (Adapted from a press release written by another institution)
 headline: High-altitude Observatory Sheds Light on Origin of Excess Anti-matter
 outlet: Joint Quantum Institute
 date_published: 2018-07-12
