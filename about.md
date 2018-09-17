@@ -6,7 +6,7 @@ permalink: /about/
 <img class="about-pic" src="/images/bio-cesare.jpg" />
 </div>
 
-My writing and reporting has appeared in [Nature](https://www.nature.com/news), [Science](https://www.sciencemag.org/news) and the [San Jose Mercury News](https://www.mercurynews.com/), among other outlets. After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the [UC Santa Cruz Science Communication Program](https://scicom.ucsc.edu).
+My writing and reporting has appeared in [Nature](https://www.nature.com/news), [Science](https://www.sciencemag.org/news) and the [San Jose Mercury News](https://www.mercurynews.com/), [among other outlets](/clips). After earning a Ph.D. in physics from the University of New Mexico in 2014, I attended journalism bootcamp at the [UC Santa Cruz Science Communication Program](https://scicom.ucsc.edu).
 
 I like programming, Netflix and podcasts. I once spent a week researching how to start my own brewery.
 
