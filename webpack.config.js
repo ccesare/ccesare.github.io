@@ -1,11 +1,26 @@
+const path = require("path")
+const WebpackWatchedGlobEntries = require("webpack-watched-glob-entries-plugin")
+const CleanWebpackPlugin = require("clean-webpack-plugin")
+// console.log(WebpackWatchedGlobEntries.getEntries([path.resolve(__dirname, "webpack/**/*.js")]))
+
 module.exports = {
-    // webpack folder's entry js - excluded from jekll's build process.
+    node: {
+        "fs": "empty"
+    },
     mode: "development",
-    entry: "./webpack/entry.js",
+    entry: WebpackWatchedGlobEntries.getEntries(
+        [
+            path.resolve(__dirname, "webpack/**/*.js")
+        ],
+        {
+            // Optional glob options that are passed to glob.sync()
+            ignore: "**/*.test.js",
+        }
+    ),
     output: {
-        // we're going to put the generated file in the assets folder so jekyll will grab it.
+        // We're going to put the generated file in the assets folder so Jekyll will grab it.
         path: __dirname + "/assets/js/",
-        filename: "bundle.js"
+        filename: "[name].js"
     },
     module: {
         rules: [
@@ -22,5 +37,9 @@ module.exports = {
                 use: ["json-loader", "yaml-frontmatter-loader"]
             }
         ]
-    }
+    },
+    plugins: [
+        new WebpackWatchedGlobEntries(),
+        new CleanWebpackPlugin(["assets/js"])
+    ]
 }
