@@ -3,7 +3,6 @@ README.md
 \#*
 .\#*
 *.py
-Gemfile*
 lighttpd.conf
 .DS_Store
 .sass-cache/
